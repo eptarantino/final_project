@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="script" type="text/javascript" href="script.js">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+    <!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 3000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
+<!-- LOAD AUDIO -->
+<script>
+$(document).ready(function(){
+          var audio = $('#emptheme');
+
+          $(document).scroll(function(){
+            console.log($(document).scrollTop());
+            if($(document).scrollTop() >= -50 && $(document).scrollTop() <= 700){
+              audio.get(0).play(); 
+            }else{
+              audio.get(0).pause();
+            }
+        });
+    });
+</script>
+<!-- AUDIO PALPATINE -->
+<script>
+$(document).ready(function(){
+          var audio = $('#palpatine');
+
+          $(document).scroll(function(){
+            console.log($(document).scrollTop());
+            if($(document).scrollTop() >= 800 && $(document).scrollTop() <= 1700){
+              audio.get(0).play(); 
+            }else{
+              audio.get(0).pause();
+            }
+        });
+    });
+</script>
+<!-- AUDIO MAUL -->
+<script>
+$(document).ready(function(){
+          var audio = $('#maul_onetruth');
+
+          $(document).scroll(function(){
+            console.log($(document).scrollTop());
+            if($(document).scrollTop() >= 2100 && $(document).scrollTop() <= 3300){
+              audio.get(0).play(); 
+            }else{
+              audio.get(0).pause();
+            }
+        });
+    });
+</script>
+<!-- AUDIO GREVIOUS -->
+<script>
+$(document).ready(function(){
+          var audio = $('#grevious_speaks');
+
+          $(document).scroll(function(){
+            console.log($(document).scrollTop());
+            if($(document).scrollTop() >= 3700 && $(document).scrollTop() <= 5000){
+              audio.get(0).play(); 
+            }else{
+              audio.get(0).pause();
+            }
+        });
+    });
+</script>
+<!-- AUDIO DOOKU -->
+<script>
+$(document).ready(function(){
+          var audio = $('#dooku_speaks');
+
+          $(document).scroll(function(){
+            console.log($(document).scrollTop());
+            if($(document).scrollTop() >= 5400 && $(document).scrollTop() <= 6600){
+              audio.get(0).play(); 
+            }else{
+              audio.get(0).pause();
+            }
+        });
+    });
+</script>
+<!-- BLACK OVERLAY -->
+  <body>
+    <div class='overlay'></div>
+      <style>
+          .overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: black; 
+            z-index: -10;
+  }
+  </style>
+    <header>
+      <div id="audio_container">
+        <audio id="emptheme">
+          <source src="emp_theme.mp3">
+        </audio>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="#dooku">THE ULTIMATE PAWN</a></li>
+              <li><a href="#grevious">THE SITH REBORN</a></li>
+              <li><a href="#maul">THE LOYAL APPRENTICE</a></li>
+              <li><a href="#emperor">THE GRAND PUPPETEER</a></li>
+          </ul>
+        </nav>   
+  </header>
+        <div id="hero">
+          <p>An Embarrassingly Incomplete Encyclopedia of Star Wars
+            <span>
+            Villains
+            </span>
+            </p>
+          <div class="header">
+    </div>
+  </div>
+    <section class="module parallax parallax-1">
+      <div class="container1">
+      </div>
+    </section>
+    <section id="emperor" class="module content-1">      
+      <div id="audio_container">
+        <audio id="palpatine">
+          <source src="Palpatine_Speech.mp3">
+        </audio>
+      </div>
+      <h2>Darth Sidious/Emperor Palpatine</h2>
+      <h3>PALPATINE was born into a wealthy family of statesmen on Naboo in 82 BBY. He met the Sith Lord Darth Plagueis—who disguised himself as prominent businessman Hego Damask—when he was young, and began learning from him. Under Plagueis' manipulation and guidance, Palpatine learned how to apply his Force sensitivities to statecraft, and was soon appointed to the position of Ambassador to the Galactic Senate. 
+        <br/> 
+        <br/>
+        There he lived a double life, projecting an image of republicanism and an appreciation for democratic principles while secretly nurturing the darkness within him. His young lust for power culminated in his betrayal and murder of his master, and his assumption of the title of Darth Sidious. In keeping with the Sith Rule of Two, he took an apprentice, Darth Maul. Palpatine was able to train the Zabrak with great ease, as his strength in The Force allowed him to conceal his identity from the Jedi.
+        <br/> 
+        <br/>
+        He also understood the role of The Force in galactic politics, and used his powers as a Sith to convince the leaders of Trade Federation to form a separatist army and got to war with The Republic. He then put on his political hat, called for action in the Senate, was elected Supreme Chancellor and acquired emergency powers which he never gave up. Palpatine was the de facto head of both The Republic and The Confederacy of Independent Systems, pulling strings on both sides to eventually assume control of The Republic (after the Confederacy of Independent systems was defeated) and transform it into the Galactic Empire.
+        <div class="imagecontainer1"</div>
+    </section>
+    <section class="module parallax parallax-2">
+      <div class="container1">
+      </div>
+    </section>
+    <section id="maul" class="module content-2">
+      <div id="audio_container">
+        <audio id="maul_onetruth">
+          <source src="maul_onetruth.mp3">
+        </audio>
+      </div>
+        <h2>Darth Maul</h2>
+        <h3>MAUL—as he was originally known on his home planet of Iridonia—was born in 54 BBY to a Nightsister couple. He was presented to Darth Sidious at a young age, and was trained as a Sith assassin at a secret faciility on Mustafar. 
+        <br/> 
+        <br/>
+        Since his master, Darth Sidious, was still the apprentice of Darth Plagueis when he began his training, Maul was an accepted violation of the Rule of Two. Both Sidious and Plagueis were eager for a reliable yet expendable servant—someone who could carry out difficult missions for them but didn't have enough knowledge of their intentions to expose them if he were to fail.  
+        <br/> 
+        <br/>
+        After completing his first mission in 33 BBY, Maul was put on the trail of Queen Amidala as she escaped the blockade on Naboo. His duel with Qui-Gon Jinn on Tatooine revealed the Sith as a standing Order to the Jedi, who had been otherwise unaware of their existence. Though he killed Jinn in a later duel on Naboo, he underestimated the Force strength and skill of his apprentice, Obi-Wan Kenobi, sliced Maul in half. The assassin was thought all but dead by both the Jedi and his former master, who was quick to replace him with Count Dooku. But the once-exploited Zabrak lived used his Sith rage to live on...
+        <div class="imagecontainer2"</div>
+    </section>
+    <section class="module parallax parallax-3">
+      <div class="container1">
+      </div>
+    </section>
+    <section id="grevious" class="module content-3">
+      <div id="audio_container">
+        <audio id="grevious_speaks">
+          <source src="grevious_speaks.mp3">
+        </audio>
+      </div>  
+        <h2>General Grevious</h2>
+        <h3>GENERAL GREVIOUS was born a purely organic life form in 19 BBY on the planet Kalee. A war with the Huks on and around his homeworld forced him to take up the art of war, and he and a female Kaleesh he befriended and soon fell in love iwht wreaked havoc on the invaders. However, his partner was killed soon after he had discovered that he loved her, and Grevious allowed his anger and grief to consume him. 
+        <br/> 
+        <br/>
+        After taking a security job with the International Banking Clan, Grevious was betrayed by his employer (who was under the influence of Count Dooku) as part of a plan to turn him into a weapon for the Separatists. His shuttled was bombed, and although Grevious survived, he was reconstructed as a cyborg (using the frozen blood of dead Jedi Master Sifo-Dyas) to be used by Dooku against the Republic in the coming conflict. 
+        <br/> 
+        <br/>
+        Dooku made Grevious Supreme Commander of the Droid Army. As the Clone Wars began, Grevious excelled in his leadership and became known as a brutal yet tactical commander. He and his MagnaGuards killed many Jedi as the conflict thickened, eventually leadeing a failed assault on the Republic caputal of Coruscant. When Dooku was killed by Anakin Skywalker and Grevious' ship was destroyed by the Republic Navy at Coruscant, the cyborg fled to Utapau to try to regain control of the Droid Army. He was unsuccessful, and was tracked down and killed by Obi-Wan Kenobi. The Confederacy collapsed soon after his death.    
+        <div class="imagecontainer3"</div>
+    </section>
+    <section class="module parallax parallax-4">
+      <div class="container1">
+      </div>
+    </section>
+    <section id="dooku" class="module content-4">
+      <div id="audio_container">
+        <audio id="dooku_speaks">
+          <source src="dooku_speaks.mp3">
+        </audio>
+      </div>  
+        <h2>Count Dooku</h2>
+        <h3>COUNT DOOKU was born to a wealthy family on the planet Serenno in 102 BBY. His parents were very proud of his Force abilities, and were quick to surrender him to the Jedi when they were approached. Dooku excelled in his learning from an early age, and studied diplomacy before he accepted his padawanship. Yoda helped train Dooku in the art of the lightsaber, and eventually became his confidant and advisor. 
+        <br/> 
+        <br/>
+        Dooku's path to the light, however, was soon interrupted by a disastrous battle on the planet Galidraan. The Jedi has unknowingly helped a ruthless governor there exterminate his enemies, and this all but destroyed Dooku's faith in the Order. He left his Jedi past behind him in the coming years, and grew increasingly under the influence of Darth Sidious. 
+        <br/> 
+        <br/>
+        Sidious eventually convinced Dooku to turn to the dark side. Dooku was appointed leader of the the Separatist factions in their secession from the Republic. With the eruption of the Clone Wars, Dooku led the droid army in several clashes with the Army of the Republic, culminating in the Battle of Coruscant. There, he was defeated in lightsaber combat by Anakin Skywalker and was summarily executed at the order of Chancellor Palpatine, who had been "kidnapped" by Separatist forces and was being held on Dooku's flagship, Invisible Hand. 
+        <div class="imagecontainer4"</div>
+    </section>
+    <footer>
+      </footer>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  </body>
+</html>

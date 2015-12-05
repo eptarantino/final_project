@@ -1,0 +1,409 @@
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+/* NAVIGATION */
+nav {
+  width: 100%;
+  height: 100%; 
+  margin: 0 auto;
+  background: black;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 2800;
+  text-transform: uppercase;
+  margin: 0 10px;
+  font-size: 20px; 
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: red;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+/* HEADERS AND TEXT */
+body {
+  font: 400 1em/1.5 "Droid Sans Mono";
+  background: #090d00;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+p span {
+  font: 700 4em/1 "Droid Sans Mono", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(http://img12.deviantart.net/7d0b/i/2014/333/f/2/the_force_awakens_hilt_guard_lightsaber_by_xpzv15-d88261n.jpg) repeat-y;
+  -webkit-background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+h1{
+	text-align: center;
+	background-color: black; 
+	width: 600px;
+	font: 400 1em/1.5 "Droid Sans Mono";
+
+}
+h3{
+	color: red; 
+	font-family: "Droid Sans Mono"; 
+	font-size: 23px; 
+	display: block; 
+	margin: 0 auto; 
+	float: left; 
+	margin-left: 50px; 
+	text-align: left; 
+	padding: 50px;  
+	padding-right: 700px;
+	font-weight: 200; 
+	position: relative; 
+
+}
+p{
+	float: left;
+	font-family: 'Droid Sans Mono';
+	font-size: 30px;
+	font-weight: 200;
+}
+/* DIVS */
+.container0{
+	margin: 0 auto; 
+	color: black; 
+	width: 500px; 
+	height: 100%; 
+}
+.container1{
+  	max-width: 960px;
+  	margin: 0 auto;
+ 	color: black;
+ 	width: 100%;
+ 	height: 20px;  
+}
+.container2-palpatine{
+	max-width: 960px;
+	margin: 0 auto; 
+	color: red;
+	background-color: black; 
+	width: 1200px; 
+	height: 400px; 
+	
+}
+.container2-maul{
+	max-width: 960px;
+	margin: 0 auto; 
+	color: red;
+	background-color: black; 
+	width: 1200px; 
+	height: 400px; 
+	
+}
+.container2-grevious{
+	max-width: 960px;
+	margin: 0 auto; 
+	color: red;
+	background-color: black; 
+	width: 1200px; 
+	height: 400px; 
+	
+}
+.container2-dooku{
+	max-width: 960px;
+	margin: 0 auto; 
+	color: red;
+	background-color: black; 
+	width: 1200px; 
+	height: 400px; 
+	
+}
+.footer{
+	width: 100px;
+	height: 500px;
+	background-image: url(http://img12.deviantart.net/7d0b/i/2014/333/f/2/the_force_awakens_hilt_guard_lightsaber_by_xpzv15-d88261n.jpg);
+
+}
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+body{ margin:0px 0px; }
+
+#hero{
+  background-color: black;
+  background-size:cover;
+  position:relative;
+  height: 90vh;
+  vertical-align: top;
+  margin-top: -30px; 
+}
+
+.header{
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-size:36px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+
+}
+
+#content{
+  padding:100px 50px;
+  text-align:center;
+  width:80%;
+  margin:0px auto;
+}
+
+#footer{
+  padding:30px 0px;
+  text-align:center;
+  background:#ddd;
+}
+
+section.module:last-child {
+  	margin-bottom: 0;
+}
+section.module h2 {
+  	font-family: 'Droid Sans Mono';
+	font-size: 60px;
+	margin: none; 
+
+}
+section.module p {
+  	margin-bottom: 40px;
+  	font-size: 16px;
+  	font-weight: 300;
+}
+section.module p:last-child {
+  	margin-bottom: 0;
+}
+section.module.content {
+  	padding: 40px 0;
+  	width: 1200px;
+  	color: black; 
+}
+section.module.parallax {
+  	height: 600px;
+  	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+section.module.parallax h1 {
+  	color: black;
+  	font-size: 48px;
+  	line-height: 200px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-0{
+	background-color: black; 
+	width: 100%; 
+	background-size: cover; 
+	height: 500px;
+}
+section.module.parallax-1{
+	background-image: url("palpatine_eyes.jpg");
+	height: 800px; 
+	width: 100%; 
+	margin: none; 
+}
+section.module.parallax-2{
+	background-image: url("darthmaul_eyes.jpg");
+	height: 800px;
+	width: 100%;  
+}
+section.module.parallax-3{
+	background-image: url("generalgrevious_eyes.jpg");
+	height: 800px; 
+	width: 100%; 
+	margin: none;  
+}
+section.module.parallax-4{
+	background-image: url("dooku_eyes.jpg");
+	height: 800px; 
+	width: 100%; 
+	margin: none; 
+}
+section.module.content-1{
+	background-color: black; 
+	color: red; 
+	width: 1500px; 
+	height: 800px; 
+}
+section.module.content-2{
+	background-color: black; 
+	color: red; 
+	width: 1500px; 
+	height: 800px; 
+}
+section.module.content-3{
+	background-color: black;
+	color: red;  
+	width: 1500px; 
+	height: 800px; 
+}
+section.module.content-4{
+	background-color: black; 
+	color: red; 
+	width: 1500px; 
+	height: 800px; 
+}
+/* ============================================================
+  DESCRIPTION DIVS
+============================================================ */
+.imagecontainer1{
+	width: 466px;
+	height: 597px; 
+	background-image: url(palpatine.jpg);
+	background-size: contain; 
+	position: relative;
+	left: 800px; 
+	top: -610px;  
+	margin-right: 250px; 
+}
+.imagecontainer2{
+	width: 466px;
+	height: 597px; 
+	background-image: url(darthmaul.jpg);
+	background-size: contain; 
+	position: relative;
+	left: 800px; 
+	top: -525px;  
+	margin-right: 250px; 
+}
+.imagecontainer3{
+	width: 466px;
+	height: 597px; 
+	background-image: url(generalgrevious.jpg);
+	background-size: contain; 
+	position: relative;
+	left: 800px; 
+	top: -580px;  
+	margin-right: 250px; 
+}
+.imagecontainer4{
+	width: 466px;
+	height: 590px; 
+	background-image: url(dooku.jpg);
+	background-size: contain; 
+	position: relative;
+	left: 800px; 
+	top: -550px;  
+	margin-right: 250px; 
+
+}
+}
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 100px;
+
+  }
+}
